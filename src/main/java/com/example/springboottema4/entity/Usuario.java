@@ -21,16 +21,18 @@ import java.util.List;
 public class Usuario  {
     @Id
     @GeneratedValue
-    Integer id;
+    Long id;
    @Column(nullable = false)
     String usuario;
-    String contraseña;
+    String password;
+    String email;
     String nombre;
     String apellido;
     String city;
-    String pais;
     String codigo_postal;
     String telefono;
 
+    @Enumerated(EnumType.STRING)
+    private Rol userEnum;
 
 }
