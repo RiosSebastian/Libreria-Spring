@@ -1,13 +1,14 @@
-package com.example.springboottema4.servis;
+package com.example.springboottema4.servis.impl;
 
 import com.example.springboottema4.entity.Libros;
 import com.example.springboottema4.repository.LibrosRepository;
+import com.example.springboottema4.servis.LibrosServis;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
-public class LibrosServisImpl implements LibrosServis{
+public class LibrosServisImpl implements LibrosServis {
 
     @Autowired
     private LibrosRepository librosRepository;
